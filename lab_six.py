@@ -7,6 +7,14 @@ def encode(password):
         encode_password += encrypted_password
     return encode_password
 
+# name:Keyla Perez adding decode fucntion :)
+def decode(encoded_password):
+    decoded_password = ""
+    for digit in encoded_password:
+        decrypted_digit = str((int(digit) - 3) % 10)
+        decoded_password += decrypted_digit
+    return decoded_password
+
 
 # main function
 def main():
