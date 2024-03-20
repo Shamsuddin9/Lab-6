@@ -17,13 +17,18 @@ def main():
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
-        choice = input("Please enter an option: ")
-        if choice == "1":
+        menu_choice = input("Please enter an option: ")
+        if menu_choice == '1':
             password = input("Please enter your password to encode: ")
             encode_password = encode(password)
             print("Your password has been encoded and stored!")
-        elif choice == "3":
+        elif menu_choice == '3':
             encryption = False
+        # I can't finish the functions due to the decode not being there
+        # elif menu_choice == '2':
+        # print(f'The encoded password is {encode_password},
+        # and the original password is {decode password function name(encode_password)} ')
+
         else:
             print("Invalid option. Please try again.")
 
