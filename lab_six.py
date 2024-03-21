@@ -32,11 +32,8 @@ def main():
             print("Your password has been encoded and stored!")
         elif menu_choice == '3':
             encryption = False
-        # I can't finish the functions due to the decode not being there
-        # elif menu_choice == '2':
-        # print(f'The encoded password is {encode_password},
-        # and the original password is {decode password function name(encode_password)} ')
-
+        elif menu_choice == '2':
+            print(f'The encoded password is {encode_password},and the original password is {decode(encode_password)} ')
         else:
             print("Invalid option. Please try again.")
 
